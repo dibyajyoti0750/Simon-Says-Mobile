@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  font-family: "Oxanium", sans-serif;
+}
+
+.btn {
+  width: 12.5rem;
+  height: 12.5rem;
+  border: 0.625rem solid black;
+  border-radius: 20%;
+  margin: 2.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (orientation: portrait) {
+  .btn {
+    width: 9rem;
+    height: 9rem;
+    border: 0.4rem solid black;
+    border-radius: 20%;
+    margin: 1rem;
+  }
+
+  h3 {
+    position: relative;
+    top: 80px;
+  }
+}
+
+.red {
+  background-color: #d95980;
+}
+
+.yellow {
+  background-color: #f99b45;
+}
+
+.green {
+  background-color: #63aac0;
+}
+
+.purple {
+  background-color: #819ff9;
+}
+
+.flash {
+  background-color: white;
+}
+
+.userFlash {
+  background-color: green;
+}
+
+h2 {
+  display: inline;
+}
+
+h3 {
+  display: inline;
+  position: relative;
+  bottom: 1rem;
+}
