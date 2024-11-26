@@ -4,6 +4,7 @@ let btns = ["red", "yellow", "green", "purple"];
 let h2 = document.querySelector("h2");
 let gameSeq = [];
 let userSeq = [];
+let startBtn = document.querySelector(".start");
 
 function getReady() {
   setTimeout(() => {
@@ -20,7 +21,7 @@ function getReady() {
   }, 100);
 }
 
-document.addEventListener("keypress", () => {
+startBtn.addEventListener("click", () => {
   if (!started) {
     console.log("Game Started");
     started = true;
@@ -78,11 +79,11 @@ function matchSeq(idx) {
       setTimeout(levelUp, 1000);
     }
   } else {
-    h2.innerHTML = `Game Over! Your score was ${level} <br /> Press any key to Restart.`;
+    h2.innerHTML = `Game Over! Your score was ${level} <br /> Click the button below to Restart.`;
     document.querySelector("body").style.backgroundColor = "red";
     setTimeout(() => {
       document.querySelector("body").style.backgroundColor = "white";
-    }, 150);
+    }, 180);
     reset();
   }
 }
